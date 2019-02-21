@@ -17,7 +17,7 @@ echo 'export VISIBLE=now' >> /etc/profile &&
 # Prepare to install Oracle
 apt-get install -y libaio1 net-tools bc &&
 ln -s /usr/bin/awk /bin/awk &&
-mkdir /var/lock/subsys &&
+mkdir -p /var/lock/subsys &&
 mv /assets/chkconfig /sbin/chkconfig &&
 chmod 755 /sbin/chkconfig &&
 
